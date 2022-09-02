@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:background="#0b6156"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginEnd="38dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUsernameSignUp"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPasswordSignUp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/edtUsernameSignUp"
+
+
+            ></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtRetypePasswordSignup"
+            android:hint="Retype Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/edtUsernameSignUp"
+            ></EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignUp"
+            android:text="Sign up"
+            android:layout_below="@+id/edtRetypePasswordSignup"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/purple_700"
+
+            ></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHaveAccount"
+            android:text="Already have account"
+            android:layout_below="@+id/btnSignUp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="150dp"
+            ></TextView>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
